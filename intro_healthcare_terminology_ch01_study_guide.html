@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 1 — Introduction to Healthcare Terminology | Medical Terminology Study Guide</title>
+<style>
+:root{
+  --color-background-primary:#ffffff;--color-background-secondary:#f7f7f7;--color-background-tertiary:#eeeeee;
+  --color-background-info:#e8f0fc;--color-background-success:#e6f4ea;--color-background-warning:#fff8e1;--color-background-danger:#fce8e8;
+  --color-text-primary:#111111;--color-text-secondary:#555555;--color-text-tertiary:#888888;
+  --color-text-info:#1a5c9c;--color-text-success:#1b5e20;--color-text-warning:#854F0B;--color-text-danger:#9c2020;
+  --color-border-primary:rgba(0,0,0,0.4);--color-border-secondary:rgba(0,0,0,0.18);--color-border-tertiary:rgba(0,0,0,0.09);
+  --color-border-info:#185FA5;--color-border-success:#0F6E56;--color-border-warning:#854F0B;--color-border-danger:#c62828;
+  --border-radius-md:8px;--border-radius-lg:12px;
+}
+@media(prefers-color-scheme:dark){
+  :root{
+    --color-background-primary:#1e1e1e;--color-background-secondary:#2a2a2a;--color-background-tertiary:#333333;
+    --color-background-info:#0d2a45;--color-background-success:#0d2a1a;--color-background-warning:#2a1f00;--color-background-danger:#2a0d0d;
+    --color-text-primary:#eeeeee;--color-text-secondary:#aaaaaa;--color-text-tertiary:#666666;
+    --color-text-info:#7ab3e8;--color-text-success:#81c784;--color-text-warning:#ffcc66;--color-text-danger:#e57373;
+    --color-border-primary:rgba(255,255,255,0.4);--color-border-secondary:rgba(255,255,255,0.15);--color-border-tertiary:rgba(255,255,255,0.08);
+    --color-border-info:#4a90d9;--color-border-success:#4caf78;--color-border-warning:#ffb74d;--color-border-danger:#e57373;
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--color-background-secondary);color:var(--color-text-primary);line-height:1.6;padding:0 0 3rem}
+.page-header{background:var(--color-background-primary);border-bottom:0.5px solid var(--color-border-secondary);padding:1.25rem 2rem;margin-bottom:1.5rem}
+.page-header h1{font-size:22px;font-weight:500;color:var(--color-text-primary)}
+.page-header p{font-size:14px;color:var(--color-text-secondary);margin-top:3px}
+.container{max-width:900px;margin:0 auto;padding:0 1.25rem}
+.sg{padding:.5rem 0 2rem}
+.tab-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:1.25rem}
+.tab-btn{padding:6px 13px;border-radius:var(--border-radius-md);border:0.5px solid var(--color-border-secondary);background:var(--color-background-primary);color:var(--color-text-secondary);font-size:13px;cursor:pointer;transition:all .15s}
+.tab-btn.active{background:var(--color-background-info);color:var(--color-text-info);border-color:var(--color-border-info)}
+.tab-btn:hover:not(.active){background:var(--color-background-secondary)}
+.sec{display:none}.sec.active{display:block}
+.sec-hdr{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--color-text-secondary);margin:1.4rem 0 .65rem;padding-bottom:4px;border-bottom:0.5px solid var(--color-border-tertiary)}
+.pg{font-size:14px;color:var(--color-text-secondary);line-height:1.7;margin-bottom:1rem;background:var(--color-background-secondary);padding:.75rem 1rem;border-radius:var(--border-radius-md)}
+.stat-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:1.25rem}
+.stat-chip{padding:6px 14px;border-radius:var(--border-radius-md);border:0.5px solid var(--color-border-tertiary);font-size:13px;background:var(--color-background-primary)}
+.stat-chip strong{font-weight:600}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+.ccard{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:.9rem 1.1rem}
+.ccard .ctitle{font-size:14px;font-weight:600;color:var(--color-text-primary);margin-bottom:5px}
+.ccard .cwt{font-size:11px;font-weight:600;padding:2px 7px;border-radius:var(--border-radius-md);display:inline-block;margin-bottom:6px}
+.ccard .cdef{font-size:12px;color:var(--color-text-secondary);line-height:1.55}
+.dtable{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:.5rem;table-layout:fixed;background:var(--color-background-primary);border-radius:var(--border-radius-lg);overflow:hidden}
+.dtable th{text-align:left;padding:8px 12px;background:var(--color-background-secondary);border-bottom:0.5px solid var(--color-border-secondary);color:var(--color-text-secondary);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+.dtable td{padding:9px 12px;border-bottom:0.5px solid var(--color-border-tertiary);vertical-align:top;color:var(--color-text-secondary)}
+.dtable tr:last-child td{border-bottom:none}
+.dtable tr:hover td{background:var(--color-background-secondary)}
+.dtable .wp{font-weight:600;font-style:italic;color:var(--color-text-primary);font-size:14px}
+.dtable .mean{font-weight:600;color:var(--color-text-primary)}
+.tpill{display:inline-block;font-size:11px;padding:2px 7px;border-radius:var(--border-radius-md);font-weight:600}
+.rule-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1rem 1.2rem;margin-bottom:.75rem}
+.rule-card .rn{font-size:22px;font-weight:500;margin-bottom:6px}
+.rule-card .rt{font-size:14px;font-weight:600;color:var(--color-text-primary);margin-bottom:6px}
+.rule-card .re{font-size:13px;color:var(--color-text-secondary);line-height:1.6}
+.rule-card .rx{font-family:monospace;background:var(--color-background-secondary);padding:6px 10px;border-radius:var(--border-radius-md);font-size:13px;margin-top:8px;display:block;border:0.5px solid var(--color-border-tertiary)}
+.card-method{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-bottom:1.25rem}
+.cm-step{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:.9rem 1.1rem;text-align:center}
+.cm-letter{font-size:38px;font-weight:500;line-height:1}
+.cm-word{font-size:14px;font-weight:600;margin-top:4px}
+.cm-desc{font-size:12px;color:var(--color-text-secondary);margin-top:4px;line-height:1.5}
+.fc-controls{display:flex;align-items:center;gap:10px;margin-bottom:1.25rem;flex-wrap:wrap}
+.fc-sel{padding:6px 10px;border-radius:var(--border-radius-md);border:1px solid var(--color-border-secondary);background:var(--color-background-primary);color:var(--color-text-primary);font-size:14px}
+.flashcard{background:var(--color-background-primary);border:1px solid var(--color-border-secondary);border-radius:var(--border-radius-lg);padding:1.75rem;min-height:175px;display:flex;flex-direction:column;justify-content:center;align-items:center;cursor:pointer;position:relative}
+.flashcard:hover{border-color:var(--color-border-primary)}
+.fc-badge{position:absolute;top:11px;left:13px;font-size:11px;padding:2px 7px;border-radius:var(--border-radius-md);font-weight:600}
+.fc-front{font-size:21px;font-weight:500;text-align:center;color:var(--color-text-primary)}
+.fc-back{display:none;text-align:center}
+.fc-back .meaning{font-size:16px;font-weight:500;color:var(--color-text-primary);margin-bottom:5px}
+.fc-back .example{font-size:12px;color:var(--color-text-secondary)}
+.fc-hint{font-size:12px;color:var(--color-text-tertiary);margin-top:.75rem}
+.fc-prog{font-size:13px;color:var(--color-text-secondary);margin-left:auto}
+.fc-actions{display:flex;gap:8px;margin-top:.9rem;flex-wrap:wrap;justify-content:center}
+.btn{padding:7px 16px;border-radius:var(--border-radius-md);border:1px solid var(--color-border-secondary);background:var(--color-background-primary);color:var(--color-text-primary);font-size:14px;cursor:pointer;transition:all .15s}
+.btn:hover{background:var(--color-background-secondary)}
+.btn-ok{border-color:var(--color-border-success);color:var(--color-text-success)}.btn-ok:hover{background:var(--color-background-success)}
+.btn-no{border-color:var(--color-border-danger);color:var(--color-text-danger)}.btn-no:hover{background:var(--color-background-danger)}
+.fc-score{font-size:13px;color:var(--color-text-secondary);margin-top:.75rem}
+.ref-bar{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:.75rem;align-items:center}
+.ref-search{flex:1;min-width:170px;padding:8px 12px;border-radius:var(--border-radius-md);border:1px solid var(--color-border-secondary);background:var(--color-background-primary);color:var(--color-text-primary);font-size:14px}
+.filt{padding:5px 11px;border-radius:var(--border-radius-md);border:1px solid var(--color-border-secondary);background:var(--color-background-primary);color:var(--color-text-secondary);font-size:12px;cursor:pointer}
+.filt.active{background:var(--color-background-secondary);color:var(--color-text-primary);border-color:var(--color-border-primary)}
+.ref-table{width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed;background:var(--color-background-primary);border-radius:var(--border-radius-lg);overflow:hidden}
+.ref-table th{text-align:left;padding:8px 12px;background:var(--color-background-secondary);border-bottom:0.5px solid var(--color-border-secondary);color:var(--color-text-secondary);font-weight:600;font-size:11px;text-transform:uppercase}
+.ref-table td{padding:8px 12px;border-bottom:0.5px solid var(--color-border-tertiary);vertical-align:top}
+.ref-table tr:hover td{background:var(--color-background-secondary)}
+.ref-table col:first-child{width:24%}.ref-table col:nth-child(2){width:13%}
+.quiz-q{background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:1rem 1.15rem;margin-bottom:1rem;font-size:15px;font-weight:500;line-height:1.5}
+.quiz-opts{display:flex;flex-direction:column;gap:7px;margin-bottom:1rem}
+.qopt{padding:9px 13px;border-radius:var(--border-radius-md);border:1px solid var(--color-border-secondary);background:var(--color-background-primary);color:var(--color-text-primary);font-size:14px;cursor:pointer;text-align:left;transition:all .15s}
+.qopt:hover:not(:disabled){background:var(--color-background-secondary)}
+.qopt.correct{background:var(--color-background-success);border-color:var(--color-border-success);color:var(--color-text-success)}
+.qopt.wrong{background:var(--color-background-danger);border-color:var(--color-border-danger);color:var(--color-text-danger)}
+.qfb{font-size:13px;margin-bottom:.9rem;min-height:16px}
+.qctr{font-size:12px;color:var(--color-text-tertiary)}
+.score-wrap{background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:2rem;text-align:center}
+.score-num{font-size:40px;font-weight:500}
+.score-lbl{font-size:14px;color:var(--color-text-secondary);margin-top:4px}
+.sp-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.sp-pair{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:.65rem .9rem;display:flex;justify-content:space-between;align-items:center}
+.sp-s{font-size:13px;color:var(--color-text-secondary)}.sp-p{font-size:13px;font-weight:600;color:var(--color-text-primary)}
+.suf-group{margin-bottom:1.5rem}
+.suf-group-hdr{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;padding:5px 10px;border-radius:var(--border-radius-md);margin-bottom:.65rem;display:inline-block}
+</style>
+</head>
+<body>
+<div class="page-header">
+  <div style="max-width:900px;margin:0 auto">
+    <h1>Chapter 1 — Introduction to Healthcare Terminology</h1>
+    <p>Medical Terminology Study Guide &nbsp;·&nbsp; 9 Core Prefixes + 10 Additional &nbsp;·&nbsp; 9 Core Suffixes + Full Library &nbsp;·&nbsp; 18 Combining Forms &nbsp;·&nbsp; 14 Key Concepts &nbsp;·&nbsp; 5 Word-Building Rules</p>
+  </div>
+</div>
+<div class="container"><div class="sg">
+
+<div class="tab-bar">
+  <button class="tab-btn active" onclick="showTab('overview',this)">Overview</button>
+  <button class="tab-btn" onclick="showTab('concepts',this)">Concepts</button>
+  <button class="tab-btn" onclick="showTab('prefixes',this)">Prefixes</button>
+  <button class="tab-btn" onclick="showTab('suffixes',this)">Suffixes</button>
+  <button class="tab-btn" onclick="showTab('combining',this)">Combining Forms</button>
+  <button class="tab-btn" onclick="showTab('wordbuild',this)">Word Building</button>
+  <button class="tab-btn" onclick="showTab('flashcards',this)">Flashcards</button>
+  <button class="tab-btn" onclick="showTab('quiz',this)">Quiz</button>
+</div>
+
+<!-- OVERVIEW -->
+<div class="sec active" id="tab-overview">
+  <div class="stat-row">
+    <span class="stat-chip"><strong>9</strong> core prefixes (PDF) + <strong>10</strong> additional (slides)</span>
+    <span class="stat-chip"><strong>9</strong> core suffixes (PDF) + full library by category</span>
+    <span class="stat-chip"><strong>18</strong> combining forms</span>
+    <span class="stat-chip"><strong>14</strong> key concepts</span>
+    <span class="stat-chip"><strong>5</strong> word-building rules</span>
+  </div>
+  <div class="pg">Chapter 1 is the <strong>foundation</strong> of the entire course. Rather than memorizing individual clinical terms, you are learning <em>how the language works</em> — the code that unlocks thousands of medical terms. Master the CARD method, the 5 word-building rules, and the suffix categories here and every chapter becomes easier.</div>
+
+  <div class="sec-hdr">What Chapter 1 covers</div>
+  <div class="card-grid">
+    <div class="ccard"><span class="cwt" style="background:#e8f0fc;color:#1a5c9c">Concept</span><div class="ctitle">Word structure</div><div class="cdef">Every medical term is built from up to four parts: <em>word root</em> (core meaning), <em>combining vowel</em> (usually "o"), <em>prefix</em> (modifies, precedes), and <em>suffix</em> (follows, defines type). Word root + combining vowel = combining form.</div></div>
+    <div class="ccard"><span class="cwt" style="background:#fff8e1;color:#854F0B">Method</span><div class="ctitle">CARD method</div><div class="cdef"><strong>C</strong>heck word parts → <strong>A</strong>ssign meanings → <strong>R</strong>everse suffix to front → <strong>D</strong>efine. Example: glossitis → gloss/o (tongue) + -itis (inflammation) → inflammation of the tongue.</div></div>
+    <div class="ccard"><span class="cwt" style="background:#e6f4ea;color:#1b5e20">Concept</span><div class="ctitle">Types of terms</div><div class="cdef"><em>Decodable:</em> 90% of terms — built from Greek/Latin parts. <em>Nondecodable:</em> 10% — memorize whole (cataract, asthma). <em>Eponyms:</em> named for a person (Alzheimer disease). <em>Acronyms:</em> letters of a phrase (AIDS).</div></div>
+    <div class="ccard"><span class="cwt" style="background:#fce8e8;color:#9c2020">Clinical</span><div class="ctitle">Diagnosis vs prognosis</div><div class="cdef"><em>Diagnosis:</em> PRESENT condition — what the patient has NOW. <em>Prognosis:</em> FUTURE condition — expected outcome. Pro- = before; -gnosis = state of knowledge. Prognosis = knowledge ahead of time.</div></div>
+    <div class="ccard"><span class="cwt" style="background:#fce8e8;color:#9c2020">Clinical</span><div class="ctitle">Signs vs symptoms</div><div class="cdef"><em>Signs:</em> OBJECTIVE — observable/measurable (fever, rash, elevated BP). <em>Symptoms:</em> SUBJECTIVE — reported by patient, not directly measurable ("I'm dizzy," pain). Pain is ALWAYS a symptom.</div></div>
+    <div class="ccard"><span class="cwt" style="background:#f7f7f7;color:#555555">Clinical</span><div class="ctitle">Acute vs chronic</div><div class="cdef"><em>Acute:</em> sudden onset, short-term, sharp (acu- = sharp). Begins severely and resolves. <em>Chronic:</em> long-duration, recurring nature. chron/o = time. Chronic diseases persist and return over months to years.</div></div>
+    <div class="ccard"><span class="cwt" style="background:#e8f0fc;color:#1a5c9c">Concept</span><div class="ctitle">Four categories of terms</div><div class="cdef"><strong>(1)</strong> Anatomy & physiology — structure/function. <strong>(2)</strong> Pathology — diseases/disorders. <strong>(3)</strong> Diagnostic procedures — tests. <strong>(4)</strong> Therapeutic interventions — treatments. The suffix usually signals the category.</div></div>
+    <div class="ccard"><span class="cwt" style="background:#fff8e1;color:#854F0B">Language</span><div class="ctitle">Greek & Latin origins</div><div class="cdef">90% of medical terms derive from Greek and Latin. Many structures have both a Greek and Latin combining form. Tongue: Latin lingu/o (bilingual, sublingual); Greek gloss/o (glossary, glossitis). Both appear in medical terminology.</div></div>
+  </div>
+
+  <div class="sec-hdr">Term anatomy at a glance</div>
+  <div class="card-grid">
+    <div class="ccard"><div class="ctitle">Word root</div><div class="cdef">The core meaning of a term. Cannot stand alone. Examples: <em>gloss</em> (tongue), <em>gastr</em> (stomach), <em>arthr</em> (joint). The slash in a combining form shows where the root ends: gloss/ + o = gloss/o.</div></div>
+    <div class="ccard"><div class="ctitle">Combining vowel</div><div class="cdef">Usually "o" — links the word root to a suffix or another combining form. DROPPED if suffix starts with a vowel. KEPT if suffix starts with a consonant. ALWAYS kept between two combining forms.</div></div>
+    <div class="ccard"><div class="ctitle">Combining form</div><div class="cdef">Word root + combining vowel, written with a slash: gloss/o, gastr/o, arthr/o. The "subject" of the medical term — what the term is about.</div></div>
+    <div class="ccard"><div class="ctitle">Prefix</div><div class="cdef">Attached to the BEGINNING of a term. No combining vowel needed. Modifies meaning: absence, location, number/quantity, or state. May have more than one meaning.</div></div>
+    <div class="ccard"><div class="ctitle">Suffix</div><div class="cdef">Attached to the END of a term. Defines the term's TYPE/category. When defining, the suffix meaning comes FIRST (Reverse step in CARD). Nearly always present in medical terms.</div></div>
+  </div>
+</div>
+
+<!-- CONCEPTS -->
+<div class="sec" id="tab-concepts">
+  <div class="pg">The 14 key conceptual terms from Chapter 1, plus the CARD method, term types, and clinical distinctions used throughout the entire course.</div>
+
+  <div class="sec-hdr">Key terms — defined</div>
+  <table class="dtable"><colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>Term</th><th>Definition & clinical notes</th></tr></thead>
+    <tbody>
+      <tr><td class="mean">Word root</td><td>The core meaning component of a medical term. The foundation on which the term is built. Not used alone — needs a combining vowel, suffix, or prefix. Examples: <em>gloss</em> (tongue), <em>gastr</em> (stomach), <em>arthr</em> (joint).</td></tr>
+      <tr><td class="mean">Combining form</td><td>Word root + combining vowel (usually "o"). Written with a slash: gloss/o, gastr/o, arthr/o. The SUBJECT of the term — what it is about. The slash shows where the word root ends and the combining vowel begins.</td></tr>
+      <tr><td class="mean">Prefix</td><td>A word part placed BEFORE the word root. Modifies the term's meaning by indicating absence, location, number/quantity, or state. Attached directly — no combining vowel needed. May have more than one meaning. Example: hypo- + gloss/o = hypoglossal (below the tongue).</td></tr>
+      <tr><td class="mean">Suffix</td><td>A word part placed AFTER the combining form or word root. Defines the term's type or category. When defining a term using CARD, the suffix meaning comes FIRST (Reverse). Example: gloss/o + -itis = glossitis (inflammation of the tongue).</td></tr>
+      <tr><td class="mean">Decodable term</td><td>A medical term built from recognizable Greek/Latin word parts that CAN be decoded by applying the CARD method. Approximately 90% of medical terms. Example: gastralgia (gastr/o + -algia = pain of the stomach).</td></tr>
+      <tr><td class="mean">Nondecodable term</td><td>A medical term that CANNOT be broken into meaningful component parts — must be memorized whole. Approximately 10% of terms. Examples: cataract (Greek "waterfall" — not medically useful), asthma. Greek/Latin origins exist but do not reveal the medical meaning.</td></tr>
+      <tr><td class="mean">Acronym</td><td>An abbreviation formed from the FIRST LETTERS of a series of words, pronounced as a word. Examples: AIDS (Acquired Immunodeficiency Syndrome), ADHD. Distinct from simple abbreviations — acronyms are spoken as words.</td></tr>
+      <tr><td class="mean">Eponym</td><td>A medical term carrying the name of the person or place associated with the discovery or condition. Examples: Alzheimer disease (Alois Alzheimer), Achilles tendon, Parkinson disease, Lou Gehrig disease, fallopian tubes, cesarean section. Eponyms are nondecodable.</td></tr>
+      <tr><td class="mean">Diagnosis</td><td>The identification of a patient's PRESENT condition. From Greek: dia- (through) + -gnosis (knowledge) = complete knowledge of the condition. Abbreviated Dx. The diagnostic workup = the process of determining the diagnosis.</td></tr>
+      <tr><td class="mean">Prognosis</td><td>The prediction of a patient's FUTURE condition — expected outcome or course of a disease. From Greek: pro- (before) + -gnosis (knowledge) = knowledge ahead of time. Abbreviated Px. Example: "The prognosis is favorable."</td></tr>
+      <tr><td class="mean">Sign</td><td>An OBJECTIVE clinical finding — observable and/or measurable by a healthcare provider. Examples: fever (measured), rash (seen), elevated blood pressure, abnormal lab value. Opposite of symptom.</td></tr>
+      <tr><td class="mean">Symptom</td><td>A SUBJECTIVE complaint — experienced by the patient but not directly observable or measurable. Must be reported by the patient. Examples: "I feel dizzy," "I have pain." Pain is ALWAYS a symptom. Opposite of sign.</td></tr>
+      <tr><td class="mean">Acute</td><td>Describing a disease with sudden onset, short duration, and sharp/severe intensity. From Latin: acu- = sharp (as in acupuncture). Acute conditions begin abruptly and resolve. Example: acute appendicitis, acute myocardial infarction.</td></tr>
+      <tr><td class="mean">Chronic</td><td>Describing a disease of long duration that recurs or persists without full resolution. From Greek: chron/o = time. Example: chronic obstructive pulmonary disease (COPD), chronic low back pain.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sec-hdr">CARD method — decoding medical terms</div>
+  <div class="card-method">
+    <div class="cm-step"><div class="cm-letter" style="color:#1a5c9c">C</div><div class="cm-word">Check</div><div class="cm-desc">Identify all word parts in the term. Look for the combining form and suffix (and prefix if present).</div></div>
+    <div class="cm-step"><div class="cm-letter" style="color:#1b5e20">A</div><div class="cm-word">Assign</div><div class="cm-desc">Assign a meaning to each word part using your word part knowledge.</div></div>
+    <div class="cm-step"><div class="cm-letter" style="color:#854F0B">R</div><div class="cm-word">Reverse</div><div class="cm-desc">Put the suffix meaning FIRST, before the combining form meaning. The suffix leads the definition.</div></div>
+    <div class="cm-step"><div class="cm-letter" style="color:#9c2020">D</div><div class="cm-word">Define</div><div class="cm-desc">State the complete definition of the term in natural language.</div></div>
+  </div>
+  <div class="ccard" style="margin-bottom:.75rem"><div class="ctitle">CARD worked example: <em>gastralgia</em></div><div class="cdef"><strong>C:</strong> gastr/o + -algia &nbsp;|&nbsp; <strong>A:</strong> gastr/o = stomach · -algia = pain &nbsp;|&nbsp; <strong>R:</strong> pain / stomach &nbsp;|&nbsp; <strong>D:</strong> pain of the stomach<br><br><em>Is this a sign or a symptom?</em> → Symptom — pain cannot be objectively measured or observed; it is reported by the patient.</div></div>
+  <div class="ccard"><div class="ctitle">CARD worked example: <em>arthritis</em></div><div class="cdef"><strong>C:</strong> arthr/o + -itis (dropping "o" because -itis starts with a vowel) &nbsp;|&nbsp; <strong>A:</strong> arthr/o = joint · -itis = inflammation &nbsp;|&nbsp; <strong>R:</strong> inflammation / joint &nbsp;|&nbsp; <strong>D:</strong> inflammation of a joint<br><br><em>Note:</em> arthr + -itis = arthritis (NOT "arthr<strong>o</strong>itis") — combining vowel dropped per Word Building Rule #1.</div></div>
+
+  <div class="sec-hdr">Term category identification</div>
+  <div class="card-grid">
+    <div class="ccard"><span class="cwt" style="background:#e8f0fc;color:#1a5c9c">Category 1</span><div class="ctitle">Anatomy & physiology</div><div class="cdef">Terms describing STRUCTURE and FUNCTION. Suffixes: -al, -um, -ic, -ar (all mean "pertaining to"). Examples: cardiac (pertaining to the heart), endocardium (membrane within the heart), gastric (pertaining to the stomach).</div></div>
+    <div class="ccard"><span class="cwt" style="background:#fce8e8;color:#9c2020">Category 2</span><div class="ctitle">Pathology</div><div class="cdef">Terms describing DISEASES and DISORDERS. Key suffixes: -itis (inflammation), -algia (pain), -emia (blood condition), -malacia (softening), -megaly (enlargement), -ptosis (drooping), -sclerosis (hardening), -stenosis (narrowing).</div></div>
+    <div class="ccard"><span class="cwt" style="background:#fff8e1;color:#854F0B">Category 3</span><div class="ctitle">Diagnostic procedures</div><div class="cdef">Terms describing TESTS and EXAMINATIONS. Key suffixes: -graphy (process of recording), -scopy (visual examination), -metry (process of measuring), -opsy (view of tissue). Instruments: -scope, -graph, -meter.</div></div>
+    <div class="ccard"><span class="cwt" style="background:#e6f4ea;color:#1b5e20">Category 4</span><div class="ctitle">Therapeutic interventions</div><div class="cdef">Terms describing TREATMENTS and SURGERIES. Key suffixes: -ectomy (removal), -plasty (surgical repair), -stomy (new opening), -tomy (incision), -tripsy (crushing).</div></div>
+  </div>
+
+  <div class="sec-hdr">Singular → plural endings (Greek & Latin rules)</div>
+  <div class="sp-grid">
+    <div><div class="sp-pair"><span class="sp-s">vertebra</span><span class="sp-p">vertebrae</span></div></div>
+    <div><div class="sp-pair"><span class="sp-s">arthrosis</span><span class="sp-p">arthroses</span></div></div>
+    <div><div class="sp-pair"><span class="sp-s">appendix</span><span class="sp-p">appendices</span></div></div>
+    <div><div class="sp-pair"><span class="sp-s">arthritis</span><span class="sp-p">arthritides</span></div></div>
+    <div><div class="sp-pair"><span class="sp-s">phalanx</span><span class="sp-p">phalanges</span></div></div>
+    <div><div class="sp-pair"><span class="sp-s">endocardium</span><span class="sp-p">endocardia</span></div></div>
+    <div><div class="sp-pair"><span class="sp-s">digitus</span><span class="sp-p">digiti</span></div></div>
+    <div><div class="sp-pair"><span class="sp-s">therapy</span><span class="sp-p">therapies</span></div></div>
+  </div>
+
+  <div class="sec-hdr">Pronunciation of unusual letter combinations</div>
+  <table class="dtable"><colgroup><col style="width:15%"><col style="width:25%"><col></colgroup>
+    <thead><tr><th>Letters</th><th>Pronunciation</th><th>Example</th></tr></thead>
+    <tbody>
+      <tr><td class="mean">eu</td><td>yoo</td><td>euthyroid — "you-thigh-royd"</td></tr>
+      <tr><td class="mean">ph</td><td>f</td><td>phalanx — "fay-lanks"</td></tr>
+      <tr><td class="mean">pn</td><td>n (p silent)</td><td>pneumonitis — "noo-moh-NY-tis"</td></tr>
+      <tr><td class="mean">ps</td><td>s (p silent)</td><td>psychology — "sy-KOL-oh-jee"</td></tr>
+      <tr><td class="mean">pt</td><td>t (p silent)</td><td>ptosis — "TOH-sis"</td></tr>
+      <tr><td class="mean">rh, rrh</td><td>r</td><td>rhinitis — "rye-NY-tis"</td></tr>
+      <tr><td class="mean">x (initial)</td><td>z</td><td>xeroderma — "zeer-oh-DER-mah"</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- PREFIXES -->
+<div class="sec" id="tab-prefixes">
+  <div class="pg">Chapter 1 introduces 9 prefixes (PDF list) with 10 additional from the lecture slides. Prefixes attach directly to the beginning of a term — no combining vowel is needed. They modify meaning by indicating <em>absence, location, number/quantity, or state</em>.</div>
+
+  <div class="sec-hdr">Core prefixes — Chapter 1 PDF list (9)</div>
+  <table class="dtable"><colgroup><col style="width:14%"><col style="width:24%"><col></colgroup>
+    <thead><tr><th>Prefix</th><th>Meaning</th><th>Examples & notes</th></tr></thead>
+    <tbody>
+      <tr><td class="wp">ante-</td><td class="mean">before, in front of</td><td>Anteversion (turning forward); antepartum (before birth). ⚠ Distinguish from anti- (against).</td></tr>
+      <tr><td class="wp">anti-</td><td class="mean">against, opposing</td><td>Antibacterial (against bacteria); antibiotic; antidote; anticoagulant. ⚠ Distinguish from ante- (before).</td></tr>
+      <tr><td class="wp">dys-</td><td class="mean">painful, difficult, abnormal</td><td>Dystrophy (abnormal nourishment); dyspepsia (difficult digestion); dysphagia. Universal prefix across all chapters.</td></tr>
+      <tr><td class="wp">endo-</td><td class="mean">within, inner</td><td>Endoscopy (visual exam within body); endocardium (membrane within the heart); also abbreviated end- before vowels.</td></tr>
+      <tr><td class="wp">hyper-</td><td class="mean">above, excessive, elevated</td><td>Hyperglycemia (excessive glucose in blood); hypertension; hyperthyroidism. ⚠ Opposite of hypo-.</td></tr>
+      <tr><td class="wp">hypo-</td><td class="mean">below, deficient, under</td><td>Hypoglossal (below the tongue); hypoglycemia (low blood glucose); hypodermis (under the skin). ⚠ Opposite of hyper-.</td></tr>
+      <tr><td class="wp">neo-</td><td class="mean">new</td><td>Neonatal (pertaining to new birth); neoplasm (new growth = tumor); neonatology (study of newborns).</td></tr>
+      <tr><td class="wp">per-</td><td class="mean">through</td><td>Percutaneous (through the skin); peroral (through the mouth). ⚠ Distinguish from peri- (around).</td></tr>
+      <tr><td class="wp">peri-</td><td class="mean">around, surrounding</td><td>Pericardium (around the heart); periodontal (around the teeth); peritoneum (around abdominal organs). ⚠ Distinguish from per- (through).</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sec-hdr">Additional prefixes — from lecture slides</div>
+  <table class="dtable"><colgroup><col style="width:14%"><col style="width:24%"><col></colgroup>
+    <thead><tr><th>Prefix</th><th>Meaning</th><th>Examples & notes</th></tr></thead>
+    <tbody>
+      <tr><td class="wp">a-, an-</td><td class="mean">without, absence of</td><td>Apneic (without breathing); anophthalmia (without an eye). Use an- before vowels, a- before consonants.</td></tr>
+      <tr><td class="wp">epi-</td><td class="mean">above, upon, on</td><td>Epigastric (above the stomach — upper middle abdominal region); epidermis (upon/above the skin).</td></tr>
+      <tr><td class="wp">inter-</td><td class="mean">between</td><td>Intervertebral (between vertebrae — the disc space); intercostal (between ribs). ⚠ Distinguish from intra- (within).</td></tr>
+      <tr><td class="wp">intra-</td><td class="mean">within, inside</td><td>Intradermal (within the skin — e.g., TB skin test); intravenous (within the vein = IV). ⚠ Distinguish from inter- (between).</td></tr>
+      <tr><td class="wp">para-, par-</td><td class="mean">beside, near, abnormal</td><td>Paraphilia (abnormal attraction); paramedic (near medicine). Par- is used before vowels.</td></tr>
+      <tr><td class="wp">poly-</td><td class="mean">many, much, excessive</td><td>Polyneuritis (inflammation of many nerves); polyuria (excessive urination); polycythemia (excessive red blood cells).</td></tr>
+      <tr><td class="wp">post-</td><td class="mean">after, behind</td><td>Postictal (after a seizure); postoperative (after surgery); postpartum (after birth). ⚠ Opposite of pre-.</td></tr>
+      <tr><td class="wp">pre-</td><td class="mean">before, in front of</td><td>Prenatal (before birth); preoperative (before surgery). Similar to ante-; used in different clinical contexts.</td></tr>
+      <tr><td class="wp">pro-</td><td class="mean">before, in front of, forward</td><td>Prognosis (knowledge ahead of time = prediction of future condition); protrusion (pushing forward).</td></tr>
+      <tr><td class="wp">sub-</td><td class="mean">below, under, beneath</td><td>Subhepatic (below the liver); sublingual (below the tongue); subcutaneous (below the skin).</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sec-hdr">Critical look-alike prefix pairs</div>
+  <div class="card-grid">
+    <div class="ccard"><div class="ctitle">ante- vs anti-</div><div class="cdef">ante- = BEFORE (time/position): antepartum, anteversion. anti- = AGAINST (opposing): antibacterial, anticoagulant. "anti-" fights AGAINST something.</div></div>
+    <div class="ccard"><div class="ctitle">hyper- vs hypo-</div><div class="cdef">hyper- = ABOVE NORMAL / EXCESSIVE: hypertension, hyperglycemia. hypo- = BELOW NORMAL / DEFICIENT: hypotension, hypoglycemia. These are OPPOSITES — most commonly tested prefix pair.</div></div>
+    <div class="ccard"><div class="ctitle">per- vs peri-</div><div class="cdef">per- = THROUGH (from one side to other): percutaneous (through the skin). peri- = AROUND / SURROUNDING (encircling): pericardium. The extra "i" in peri- = it surrounds/encircles.</div></div>
+    <div class="ccard"><div class="ctitle">inter- vs intra-</div><div class="cdef">inter- = BETWEEN (two separate things): intervertebral. intra- = WITHIN (inside one thing): intradermal. "intra" = "intro" = into = inside.</div></div>
+    <div class="ccard"><div class="ctitle">pre- vs ante- vs pro-</div><div class="cdef">All mean "before" but used in specific contexts. pre- = before (surgical context): prenatal, preoperative. ante- = before (position): antepartum. pro- = forward/ahead of (prognosis).</div></div>
+    <div class="ccard"><div class="ctitle">sub- vs hypo-</div><div class="cdef">Both mean "below/under." sub- = Latin origin: sublingual, subcutaneous. hypo- = Greek origin: hypoglossal, hypoglycemia. Same meaning, different linguistic roots.</div></div>
+  </div>
+</div>
+
+<!-- SUFFIXES -->
+<div class="sec" id="tab-suffixes">
+  <div class="pg">Suffixes organized by function — each category tells you what TYPE of term you are building. The suffix meaning always goes FIRST when defining a term (the R in CARD = Reverse).</div>
+
+  <div class="sec-hdr">Core suffixes — Chapter 1 PDF list (9)</div>
+  <table class="dtable"><colgroup><col style="width:14%"><col style="width:24%"><col></colgroup>
+    <thead><tr><th>Suffix</th><th>Meaning</th><th>Examples & notes</th></tr></thead>
+    <tbody>
+      <tr><td class="wp">-al</td><td class="mean">pertaining to</td><td>Neonatal (pertaining to new birth); hypoglossal (pertaining to below tongue); cervical (pertaining to cervix/neck).</td></tr>
+      <tr><td class="wp">-algia</td><td class="mean">pain</td><td>Gastralgia (stomach pain — CARD method example); cephalalgia (headache); arthralgia (joint pain without inflammation).</td></tr>
+      <tr><td class="wp">-ectomy</td><td class="mean">surgical removal</td><td>Gastrectomy (stomach removal); hysterectomy (uterus removal). Therapeutic suffix. Compare -tomy (just a cut — no removal).</td></tr>
+      <tr><td class="wp">-graphy</td><td class="mean">process of recording/imaging</td><td>Mammography (breast imaging process); electrocardiography. The PROCESS. Compare -graph (the INSTRUMENT).</td></tr>
+      <tr><td class="wp">-itis</td><td class="mean">inflammation</td><td>Glossitis (tongue); arthritis (joint); gastroenteritis; hepatitis; polyneuritis. Most common pathology suffix — universal across all chapters.</td></tr>
+      <tr><td class="wp">-logy</td><td class="mean">study of, science of</td><td>Neonatology (study of newborns); cardiology; pathology (path/o + -logy = study of disease). Specialist suffix: -logist.</td></tr>
+      <tr><td class="wp">-plasty</td><td class="mean">surgical repair, reconstruction</td><td>Rhinoplasty (nose reconstruction); arthroplasty (joint repair). Therapeutic suffix.</td></tr>
+      <tr><td class="wp">-scope</td><td class="mean">instrument for visual examination</td><td>Ophthalmoscope (eye exam instrument); arthroscope; thermoscope. The DEVICE. Compare -scopy (the procedure).</td></tr>
+      <tr><td class="wp">-tomy</td><td class="mean">incision, cutting into</td><td>Osteotomy (incision into bone); gastrotomy. Just a cut — compare -ectomy (REMOVAL). No tissue is removed with -tomy.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sec-hdr">Complete suffix library — by category</div>
+
+  <div class="suf-group">
+    <span class="suf-group-hdr" style="background:#e8f0fc;color:#1a5c9c">Structure / Anatomical Suffixes (nouns)</span>
+    <table class="dtable"><colgroup><col style="width:14%"><col style="width:24%"><col></colgroup>
+    <thead><tr><th>Suffix</th><th>Meaning</th><th>Examples</th></tr></thead>
+    <tbody>
+      <tr><td class="wp">-is</td><td class="mean">structure, thing</td><td>Hypodermis (structure under the skin)</td></tr>
+      <tr><td class="wp">-um</td><td class="mean">structure, thing, membrane</td><td>Endocardium (membrane within the heart); pericardium (membrane around the heart)</td></tr>
+      <tr><td class="wp">-icle, -ole, -ule</td><td class="mean">small, tiny (diminutive)</td><td>Cuticle (little skin); arteriole (little artery); venule (little vein)</td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="suf-group">
+    <span class="suf-group-hdr" style="background:#f7f7f7;color:#555555">Adjective Suffixes — all mean "pertaining to"</span>
+    <table class="dtable"><colgroup><col style="width:14%"><col style="width:24%"><col></colgroup>
+    <thead><tr><th>Suffix</th><th>Meaning</th><th>Examples</th></tr></thead>
+    <tbody>
+      <tr><td class="wp">-ac</td><td class="mean">pertaining to</td><td>Cardiac (pertaining to the heart)</td></tr>
+      <tr><td class="wp">-al</td><td class="mean">pertaining to</td><td>Cervical; neonatal; hypoglossal</td></tr>
+      <tr><td class="wp">-ar</td><td class="mean">pertaining to</td><td>Valvular (pertaining to a valve)</td></tr>
+      <tr><td class="wp">-ary</td><td class="mean">pertaining to</td><td>Coronary (pertaining to the heart/crown)</td></tr>
+      <tr><td class="wp">-eal</td><td class="mean">pertaining to</td><td>Esophageal (pertaining to the esophagus)</td></tr>
+      <tr><td class="wp">-ic</td><td class="mean">pertaining to</td><td>Hypodermic; epigastric (pertaining to above stomach)</td></tr>
+      <tr><td class="wp">-ous</td><td class="mean">pertaining to</td><td>Subcutaneous (pertaining to below the skin)</td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="suf-group">
+    <span class="suf-group-hdr" style="background:#fce8e8;color:#9c2020">Pathology Suffixes — diseases & disorders</span>
+    <table class="dtable"><colgroup><col style="width:14%"><col style="width:24%"><col></colgroup>
+    <thead><tr><th>Suffix</th><th>Meaning</th><th>Examples</th></tr></thead>
+    <tbody>
+      <tr><td class="wp">-algia</td><td class="mean">pain</td><td>Gastralgia (stomach pain); cephalalgia (headache); arthralgia (joint pain)</td></tr>
+      <tr><td class="wp">-emia</td><td class="mean">blood condition</td><td>Hyperlipidemia (excessive lipids in blood); hypoglycemia; anemia</td></tr>
+      <tr><td class="wp">-ia</td><td class="mean">condition, state</td><td>Agastria (no stomach); anophthalmia (no eye); apnea (no breathing)</td></tr>
+      <tr><td class="wp">-itis</td><td class="mean">inflammation</td><td>Tonsillitis; arthritis; glossitis; hepatitis; polyneuritis (poly- + neur/o)</td></tr>
+      <tr><td class="wp">-malacia</td><td class="mean">softening</td><td>Chondromalacia (cartilage softening); osteomalacia (bone softening). ⚠ Do NOT confuse with -megaly.</td></tr>
+      <tr><td class="wp">-megaly</td><td class="mean">enlargement</td><td>Splenomegaly (enlarged spleen); hepatomegaly (enlarged liver). ⚠ Do NOT confuse with -malacia.</td></tr>
+      <tr><td class="wp">-ptosis</td><td class="mean">drooping, prolapse, falling</td><td>Hysteroptosis (uterus prolapse); blepharoptosis (drooping eyelid). Also standalone: ptosis.</td></tr>
+      <tr><td class="wp">-sclerosis</td><td class="mean">hardening</td><td>Arteriosclerosis (artery hardening); atherosclerosis. Also standalone: sclerosis.</td></tr>
+      <tr><td class="wp">-stenosis</td><td class="mean">narrowing, stricture</td><td>Arteriostenosis (narrowed artery); pyloric stenosis. Also standalone: stenosis.</td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="suf-group">
+    <span class="suf-group-hdr" style="background:#fff8e1;color:#854F0B">Diagnostic Suffixes — tests & examinations</span>
+    <table class="dtable"><colgroup><col style="width:14%"><col style="width:24%"><col></colgroup>
+    <thead><tr><th>Suffix</th><th>Meaning</th><th>Examples</th></tr></thead>
+    <tbody>
+      <tr><td class="wp">-graphy</td><td class="mean">process of recording/imaging</td><td>Mammography (breast imaging process); electrocardiography. The PROCESS. Instrument: -graph.</td></tr>
+      <tr><td class="wp">-metry</td><td class="mean">process of measuring</td><td>Spirometry (measuring breathing); optometry. The PROCESS. Instrument: -meter.</td></tr>
+      <tr><td class="wp">-opsy</td><td class="mean">view of, examination of tissue</td><td>Biopsy (bio- + -opsy = view of living tissue — removed for microscopic examination)</td></tr>
+      <tr><td class="wp">-scopy</td><td class="mean">process of visual examination</td><td>Hysteroscopy; arthroscopy; colonoscopy. The PROCESS. Instrument: -scope.</td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="suf-group">
+    <span class="suf-group-hdr" style="background:#e6f4ea;color:#1b5e20">Therapeutic Suffixes — treatments & surgeries</span>
+    <table class="dtable"><colgroup><col style="width:14%"><col style="width:24%"><col></colgroup>
+    <thead><tr><th>Suffix</th><th>Meaning</th><th>Examples</th></tr></thead>
+    <tbody>
+      <tr><td class="wp">-ectomy</td><td class="mean">surgical removal</td><td>Gastrectomy (stomach); hysterectomy (uterus); appendectomy</td></tr>
+      <tr><td class="wp">-plasty</td><td class="mean">surgical repair/reconstruction</td><td>Rhinoplasty (nose); arthroplasty (joint); mammoplasty (breast)</td></tr>
+      <tr><td class="wp">-stomy</td><td class="mean">surgical creation of a new opening</td><td>Colostomy (colon to abdominal wall); gastrostomy. Creates a NEW opening.</td></tr>
+      <tr><td class="wp">-tomy</td><td class="mean">incision, cutting into</td><td>Osteotomy (into bone); gastrotomy. Just a cut — NO removal.</td></tr>
+      <tr><td class="wp">-tripsy</td><td class="mean">crushing</td><td>Lithotripsy (lith/o + -tripsy = crushing of stones — kidney or gallstones)</td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="suf-group">
+    <span class="suf-group-hdr" style="background:#e8f0fc;color:#1a5c9c">Instrument Suffixes — devices</span>
+    <table class="dtable"><colgroup><col style="width:14%"><col style="width:24%"><col></colgroup>
+    <thead><tr><th>Suffix</th><th>Meaning</th><th>Examples</th></tr></thead>
+    <tbody>
+      <tr><td class="wp">-graph</td><td class="mean">instrument that records</td><td>Electrocardiograph (records heart electricity). Process = -graphy.</td></tr>
+      <tr><td class="wp">-meter</td><td class="mean">instrument that measures</td><td>Thermometer (measures temperature); spirometer. Process = -metry.</td></tr>
+      <tr><td class="wp">-scope</td><td class="mean">instrument for visual examination</td><td>Ophthalmoscope; arthroscope; thermoscope. Procedure = -scopy.</td></tr>
+      <tr><td class="wp">-tome</td><td class="mean">instrument for cutting</td><td>Osteotome (instrument for cutting bone)</td></tr>
+      <tr><td class="wp">-tripter, -trite</td><td class="mean">instrument for crushing</td><td>Lithotripter / lithotrite (instrument for crushing kidney stones)</td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="suf-group">
+    <span class="suf-group-hdr" style="background:#f7f7f7;color:#555555">Specialty / Specialist Suffixes</span>
+    <table class="dtable"><colgroup><col style="width:14%"><col style="width:24%"><col></colgroup>
+    <thead><tr><th>Suffix</th><th>Meaning</th><th>Examples</th></tr></thead>
+    <tbody>
+      <tr><td class="wp">-logy</td><td class="mean">study of, science of</td><td>Neonatology; cardiology; pathology. The FIELD/SPECIALTY.</td></tr>
+      <tr><td class="wp">-logist</td><td class="mean">one who studies, specialist</td><td>Psychologist; cardiologist; gastroenterologist. The SPECIALIST.</td></tr>
+      <tr><td class="wp">-ist</td><td class="mean">one who specializes</td><td>Dentist; therapist; specialist</td></tr>
+      <tr><td class="wp">-iatry</td><td class="mean">medical treatment (specialty field)</td><td>Psychiatry; podiatry</td></tr>
+      <tr><td class="wp">-iatrist</td><td class="mean">specialist in medical treatment</td><td>Psychiatrist; podiatrist</td></tr>
+      <tr><td class="wp">-iatrics</td><td class="mean">medical specialty</td><td>Pediatrics (children); geriatrics (elderly)</td></tr>
+      <tr><td class="wp">-iatrician</td><td class="mean">specialist in a medical field</td><td>Pediatrician; geriatrician</td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<!-- COMBINING FORMS -->
+<div class="sec" id="tab-combining">
+  <div class="pg">Chapter 1 introduces 18 combining forms used across the course for initial word-building practice. They represent a broad range of structures — not limited to a single body system.</div>
+
+  <div class="sec-hdr">All 18 combining forms — Chapter 1</div>
+  <table class="dtable"><colgroup><col style="width:18%"><col style="width:22%"><col></colgroup>
+    <thead><tr><th>Combining form</th><th>Meaning</th><th>Word-building examples & notes</th></tr></thead>
+    <tbody>
+      <tr><td class="wp">arthr/o</td><td class="mean">joint</td><td>Arthritis (arthr + -itis; drop "o" — Rule 1); arthroplasty (arthr/o + -plasty; keep "o" — Rule 2); arthroscope (instrument to view joint); arthroscopy (visual exam of joint). Most used in Rules 1 & 2 teaching examples.</td></tr>
+      <tr><td class="wp">cardi/o</td><td class="mean">heart</td><td>Cardiac (cardi/o + -ac); endocardium (endo- + cardi/o + -um — Rule 3: cardi ends in "i", -um starts with vowel → drop one); pericardium (around the heart); electrocardiograph (records heart electricity).</td></tr>
+      <tr><td class="wp">col/o</td><td class="mean">colon, large intestine</td><td>Colostomy (col/o + -stomy = surgical opening of colon to abdominal wall); colonoscopy (visual exam of colon); colitis (colon inflammation).</td></tr>
+      <tr><td class="wp">cyst/o</td><td class="mean">urinary bladder, sac, cyst</td><td>Cystoscopy (visual exam of urinary bladder); cystotomy (incision into bladder); cystitis (bladder inflammation). Also appears in cholecystectomy (gallbladder removal).</td></tr>
+      <tr><td class="wp">enter/o</td><td class="mean">small intestine</td><td>Gastroenteritis (gastr/o + enter/o + -itis — Rule 4: keep "o" between CFs, drop before -itis); gastroenterology (study of stomach and intestines).</td></tr>
+      <tr><td class="wp">gastr/o</td><td class="mean">stomach</td><td>Gastralgia (gastr/o + -algia = stomach pain — the CARD method primary example); gastrectomy (stomach removal); gastritis; gastroenteritis; epigastric (epi- + gastr/o + -ic = pertaining to above the stomach).</td></tr>
+      <tr><td class="wp">gloss/o</td><td class="mean">tongue (Greek)</td><td>Glossitis (gloss/o + -itis = inflammation of tongue — CARD primary example); hypoglossal (below the tongue — cranial nerve XII name). Greek version; Latin version = lingu/o (bilingual, sublingual).</td></tr>
+      <tr><td class="wp">hepat/o</td><td class="mean">liver</td><td>Hepatitis (liver inflammation); hepatomegaly (enlarged liver); subhepatic (sub- + hepat/o + -ic = below the liver); hepatology (study of the liver).</td></tr>
+      <tr><td class="wp">hyster/o</td><td class="mean">uterus</td><td>Hysterectomy (hyster/o + -ectomy = uterus removal); hysteroscopy (visual exam of uterus — diagnostic); hysteroptosis (hyster/o + -ptosis = prolapse of the uterus).</td></tr>
+      <tr><td class="wp">mamm/o</td><td class="mean">breast</td><td>Mammography (mamm/o + -graphy = process of imaging/recording the breast); mammoplasty (surgical reconstruction); mammogram (mamm/o + -gram = the actual image produced).</td></tr>
+      <tr><td class="wp">nat/o</td><td class="mean">birth</td><td>Neonatal (neo- + nat/o + -al = pertaining to new birth); prenatal (pre- + nat/o + -al = before birth); neonatology (study of newborns); postnatal (after birth).</td></tr>
+      <tr><td class="wp">neur/o</td><td class="mean">nerve, nervous system</td><td>Polyneuritis (poly- + neur/o + -itis = inflammation of many nerves); neurology (study of nervous system); neuralgia (nerve pain); neuroscopy.</td></tr>
+      <tr><td class="wp">ophthalm/o</td><td class="mean">eye</td><td>Ophthalmoscope (ophthalm/o + -scope = instrument to examine the eye); anophthalmia (an- + ophthalm/o + -ia = without an eye); ophthalmology. ⚠ Difficult spelling — two h's in ophthalm/o.</td></tr>
+      <tr><td class="wp">oste/o</td><td class="mean">bone</td><td>Osteotomy (oste/o + -tomy = incision into bone); osteotome (oste/o + -tome = instrument for cutting bone); osteoporosis (porous bone); osteomalacia (bone softening); osteoplasty.</td></tr>
+      <tr><td class="wp">path/o</td><td class="mean">disease, suffering</td><td>Pathology (path/o + -logy = study of disease); pathologist; pathogen (path/o + -gen = producer of disease); neuropathy (nerve disease).</td></tr>
+      <tr><td class="wp">ped/o</td><td class="mean">child OR foot (dual!)</td><td>Pediatrics (ped/o + -iatrics = medical specialty for children); pediatrician. ⚠ ped/o = child (Greek) OR foot (Latin) — context determines meaning. Podiatry (pod/o) is more specific for foot conditions.</td></tr>
+      <tr><td class="wp">rhin/o</td><td class="mean">nose</td><td>Rhinoplasty (rhin/o + -plasty = surgical nose reconstruction); rhinitis (nose inflammation); rhinorrhea (rhin/o + -rrhea = runny nose).</td></tr>
+      <tr><td class="wp">therm/o</td><td class="mean">heat, temperature</td><td>Thermometer (therm/o + -meter = instrument measuring temperature); thermoscope (instrument for observing temperature); thermotherapy (heat therapy); hypothermia (hypo- + therm/o + -ia = below-normal body temperature).</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sec-hdr">Combining forms with dual meanings or common confusion</div>
+  <div class="card-grid">
+    <div class="ccard"><div class="ctitle">ped/o — child OR foot</div><div class="cdef">Derives from both Greek pais (child) AND Latin pes/pedis (foot). Pediatrics/pediatrician = child medicine. Pedal, pedometer = foot. The specialist for feet uses pod/o (podiatrist). Always determine meaning from context and paired word parts.</div></div>
+    <div class="ccard"><div class="ctitle">lingu/o vs gloss/o — both = tongue</div><div class="cdef">Latin lingu/o: bilingual (two languages), sublingual (under tongue). Greek gloss/o: glossary (list of terms), glossitis (tongue inflammation). Both appear in medical terminology. gloss/o is more common in pathology; lingu/o in anatomy/adjective forms.</div></div>
+    <div class="ccard"><div class="ctitle">-malacia vs -megaly</div><div class="cdef">Both begin with "m" and are pathology suffixes. -malacia = SOFTENING (chondromalacia, osteomalacia). -megaly = ENLARGEMENT (hepatomegaly, splenomegaly). These are completely different conditions — a very common student error on exams.</div></div>
+    <div class="ccard"><div class="ctitle">-graphy vs -scopy vs -opsy</div><div class="cdef">All diagnostic suffixes: -graphy = process of RECORDING/IMAGING (mammography). -scopy = visual EXAMINATION (colonoscopy). -opsy = examination of REMOVED TISSUE (biopsy). Each signals a different type of diagnostic procedure.</div></div>
+  </div>
+</div>
+
+<!-- WORD BUILDING -->
+<div class="sec" id="tab-wordbuild">
+  <div class="pg">The 5 rules for building medical terms govern how word parts are joined. Master these rules and you can correctly build — and spell — any medical term from its component parts.</div>
+
+  <div class="sec-hdr">The 5 word-building rules</div>
+
+  <div class="rule-card">
+    <div class="rn" style="color:#1a5c9c">Rule 1</div>
+    <div class="rt">If the suffix starts with a VOWEL → drop the combining vowel</div>
+    <div class="re">The combining vowel "o" is NOT needed when the suffix already starts with a vowel. Think: "two vowels in a row = too much glue." The suffix provides the linking vowel.</div>
+    <span class="rx">arthr/o + -itis = arth<strong>ritis</strong> (NOT arthroitis) — "o" dropped; -itis starts with vowel "i"</span>
+    <span class="rx">gloss/o + -itis = gloss<strong>itis</strong> (NOT glossoitis) — same rule</span>
+  </div>
+
+  <div class="rule-card">
+    <div class="rn" style="color:#1b5e20">Rule 2</div>
+    <div class="rt">If the suffix starts with a CONSONANT → keep the combining vowel</div>
+    <div class="re">When the suffix begins with a consonant, the combining vowel is needed to link the parts and make pronunciation possible.</div>
+    <span class="rx">arthr/o + -plasty = arthr<strong>o</strong>plasty — "o" KEPT; -plasty starts with "p" (consonant)</span>
+    <span class="rx">gastr/o + -logy = gastr<strong>o</strong>logy — "o" kept; -logy starts with "l" (consonant)</span>
+  </div>
+
+  <div class="rule-card">
+    <div class="rn" style="color:#854F0B">Rule 3</div>
+    <div class="rt">If a combining form ends with the same vowel that begins the suffix → drop one vowel</div>
+    <div class="re">When the last letter of a word root and the first letter of a suffix are the same vowel, drop one to avoid duplication.</div>
+    <span class="rx">endocardi/o + -itis = endocard<strong>itis</strong> (NOT endocardioitis) — "i" ends root + "i" begins -itis → drop one</span>
+  </div>
+
+  <div class="rule-card">
+    <div class="rn" style="color:#9c2020">Rule 4</div>
+    <div class="rt">When two or more combining forms are joined → always keep the combining vowel between them</div>
+    <div class="re">The vowel/consonant rule (Rules 1 & 2) applies ONLY to suffixes. Between two combining forms, always keep the combining vowel — regardless of whether the second form starts with a vowel or consonant.</div>
+    <span class="rx">gastr/o + enter/o + -itis = gastr<strong>o</strong>enter<strong>itis</strong> — "o" kept between two CFs; "o" dropped before -itis</span>
+  </div>
+
+  <div class="rule-card">
+    <div class="rn" style="color:#555555">Rule 5</div>
+    <div class="rt">When multiple combining forms are used → order them by anatomical sequence or medical logic</div>
+    <div class="re">The order of combining forms follows the natural anatomical pathway or standard medical convention. The order must match the path through the body.</div>
+    <span class="rx">esophag/o + gastr/o + duoden/o + -scopy = esophagogastroduodenoscopy (EGD)</span>
+    <span class="rx">Order follows the anatomical route: esophagus → stomach → duodenum (correct direction of GI tract)</span>
+  </div>
+
+  <div class="sec-hdr">Practice applying the rules</div>
+  <div class="card-grid">
+    <div class="ccard"><div class="ctitle">arthr/o + -itis = ?</div><div class="cdef"><strong>arthritis</strong> — Rule 1: -itis starts with vowel → drop "o". Define: inflammation of a joint.</div></div>
+    <div class="ccard"><div class="ctitle">arthr/o + -plasty = ?</div><div class="cdef"><strong>arthroplasty</strong> — Rule 2: -plasty starts with consonant → keep "o". Define: surgical repair of a joint.</div></div>
+    <div class="ccard"><div class="ctitle">oste/o + -tomy = ?</div><div class="cdef"><strong>osteotomy</strong> — Rule 2: -tomy starts with consonant → keep "o". Define: incision into bone.</div></div>
+    <div class="ccard"><div class="ctitle">mamm/o + -graphy = ?</div><div class="cdef"><strong>mammography</strong> — Rule 2: -graphy starts with consonant → keep "o". Define: process of imaging the breast.</div></div>
+    <div class="ccard"><div class="ctitle">gloss/o + -itis = ?</div><div class="cdef"><strong>glossitis</strong> — Rule 1: -itis starts with vowel → drop "o". Define: inflammation of the tongue.</div></div>
+    <div class="ccard"><div class="ctitle">neo- + nat/o + -al = ?</div><div class="cdef"><strong>neonatal</strong> — Rule 2: -al starts with consonant → keep "o". Define: pertaining to new birth (newborn).</div></div>
+    <div class="ccard"><div class="ctitle">gastr/o + enter/o + -itis = ?</div><div class="cdef"><strong>gastroenteritis</strong> — Rule 4: keep "o" between CFs. Rule 1: drop "o" before -itis. Define: inflammation of stomach and small intestine.</div></div>
+    <div class="ccard"><div class="ctitle">endo- + cardi/o + -itis = ?</div><div class="cdef"><strong>endocarditis</strong> — Rule 3: cardi/o ends "i"; -itis starts "i" → drop one. Define: inflammation within the heart.</div></div>
+  </div>
+</div>
+
+<!-- FLASHCARDS -->
+<div class="sec" id="tab-flashcards">
+  <div class="fc-controls">
+    <select class="fc-sel" id="fc-cat" onchange="initFC()">
+      <option value="all">All categories</option>
+      <option value="prefix">Prefixes</option>
+      <option value="suffix">Suffixes</option>
+      <option value="combining">Combining forms</option>
+      <option value="concept">Key concepts</option>
+    </select>
+    <button class="btn" onclick="shuffleFC()">Shuffle</button>
+    <span class="fc-prog" id="fc-prog">—</span>
+  </div>
+  <div class="flashcard" id="flashcard" onclick="flipFC()">
+    <span class="fc-badge" id="fc-badge"></span>
+    <div class="fc-front" id="fc-front"></div>
+    <div class="fc-back" id="fc-back"><div class="meaning" id="fc-meaning"></div><div class="example" id="fc-example"></div></div>
+    <div class="fc-hint" id="fc-hint">click to reveal</div>
+  </div>
+  <div class="fc-actions">
+    <button class="btn btn-no" onclick="markFC(false)">✗ Still learning</button>
+    <button class="btn btn-ok" onclick="markFC(true)">✓ Got it</button>
+    <button class="btn" onclick="prevFC()">← Prev</button>
+    <button class="btn" onclick="nextFC()">Next →</button>
+  </div>
+  <div class="fc-score" id="fc-score"></div>
+</div>
+
+<!-- QUIZ -->
+<div class="sec" id="tab-quiz">
+  <div id="quiz-wrap">
+    <div class="quiz-q" id="quiz-q"></div>
+    <div class="quiz-opts" id="quiz-opts"></div>
+    <div class="qfb" id="quiz-fb"></div>
+    <button class="btn" id="quiz-next" onclick="nextQ()" style="display:none">Next →</button>
+    <div class="qctr" id="quiz-ctr"></div>
+  </div>
+  <div id="quiz-done" style="display:none">
+    <div class="score-wrap">
+      <div class="score-num" id="quiz-final"></div>
+      <div class="score-lbl">correct answers</div>
+      <div style="display:flex;gap:8px;justify-content:center;margin-top:1rem;flex-wrap:wrap">
+        <button class="btn" onclick="startQuiz()">Try again</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div></div>
+
+<script>
+const TM={
+  prefix:{label:"Prefix",bg:"#fff8e1",c:"#854F0B"},
+  suffix:{label:"Suffix",bg:"#e6f4ea",c:"#1b5e20"},
+  combining:{label:"Combining",bg:"#e8f0fc",c:"#1a5c9c"},
+  concept:{label:"Concept",bg:"#f7f7f7",c:"#555555"},
+};
+const DATA=[
+  {term:"ante-",type:"prefix",meaning:"before, in front of (time or position)",extra:"anteversion, antepartum (before birth). ⚠ not anti- (against)"},
+  {term:"anti-",type:"prefix",meaning:"against, opposing",extra:"antibacterial, antibiotic. ⚠ not ante- (before)"},
+  {term:"dys-",type:"prefix",meaning:"painful, difficult, abnormal",extra:"dystrophy, dyspepsia, dysphagia. Universal prefix across all chapters"},
+  {term:"endo-",type:"prefix",meaning:"within, inner",extra:"endoscopy, endocardium. Also abbreviated end- before vowels"},
+  {term:"hyper-",type:"prefix",meaning:"above, excessive, elevated",extra:"hyperglycemia, hypertension. ⚠ opposite of hypo-"},
+  {term:"hypo-",type:"prefix",meaning:"below, deficient, under",extra:"hypoglossal, hypoglycemia. ⚠ opposite of hyper-"},
+  {term:"neo-",type:"prefix",meaning:"new",extra:"neonatal (new birth), neoplasm (new growth = tumor), neonatology"},
+  {term:"per-",type:"prefix",meaning:"through",extra:"percutaneous (through skin). ⚠ not peri- (around)"},
+  {term:"peri-",type:"prefix",meaning:"around, surrounding",extra:"pericardium (around heart), periodontal, peritoneum. ⚠ not per- (through)"},
+  {term:"a-, an-",type:"prefix",meaning:"without, absence of",extra:"apneic (without breathing); anophthalmia (without eye). an- before vowels"},
+  {term:"epi-",type:"prefix",meaning:"above, upon, on",extra:"epigastric (above the stomach), epidermis (upon/above the skin)"},
+  {term:"inter-",type:"prefix",meaning:"between",extra:"intervertebral (between vertebrae). ⚠ not intra- (within)"},
+  {term:"intra-",type:"prefix",meaning:"within, inside",extra:"intradermal (within skin), intravenous (within vein = IV). ⚠ not inter- (between)"},
+  {term:"para-, par-",type:"prefix",meaning:"beside, near, abnormal",extra:"paraphilia, paramedic. Par- before vowels"},
+  {term:"poly-",type:"prefix",meaning:"many, much, excessive",extra:"polyneuritis, polyuria, polycythemia"},
+  {term:"post-",type:"prefix",meaning:"after, behind",extra:"postictal, postoperative, postpartum. ⚠ opposite of pre-"},
+  {term:"pre-",type:"prefix",meaning:"before, in front of",extra:"prenatal, preoperative. Similar to ante-; used in different contexts"},
+  {term:"pro-",type:"prefix",meaning:"before, in front of, forward",extra:"prognosis (knowledge ahead of time = prediction of future condition)"},
+  {term:"sub-",type:"prefix",meaning:"below, under, beneath",extra:"subhepatic, sublingual, subcutaneous (below the skin)"},
+  {term:"-al",type:"suffix",meaning:"pertaining to",extra:"neonatal (pertaining to new birth), hypoglossal (pertaining to below tongue)"},
+  {term:"-algia",type:"suffix",meaning:"pain",extra:"gastralgia (stomach pain), cephalalgia (headache), arthralgia (joint pain)"},
+  {term:"-ectomy",type:"suffix",meaning:"surgical removal",extra:"gastrectomy (stomach removal), hysterectomy. Compare -tomy (just an incision)"},
+  {term:"-graphy",type:"suffix",meaning:"process of recording/imaging",extra:"mammography (breast imaging process). The PROCESS; -graph = the instrument"},
+  {term:"-itis",type:"suffix",meaning:"inflammation",extra:"glossitis, arthritis, hepatitis, polyneuritis. Most common pathology suffix"},
+  {term:"-logy",type:"suffix",meaning:"study of, science of",extra:"neonatology, cardiology, pathology (study of disease). Specialist: -logist"},
+  {term:"-plasty",type:"suffix",meaning:"surgical repair, reconstruction",extra:"rhinoplasty (nose reconstruction), arthroplasty (joint repair)"},
+  {term:"-scope",type:"suffix",meaning:"instrument for visual examination",extra:"ophthalmoscope (eye exam instrument). The DEVICE; -scopy = the procedure"},
+  {term:"-tomy",type:"suffix",meaning:"incision, cutting into",extra:"osteotomy (into bone). Just a cut — compare -ectomy (REMOVAL)"},
+  {term:"-emia",type:"suffix",meaning:"blood condition",extra:"hyperglycemia (excess glucose in blood), hyperlipidemia, anemia"},
+  {term:"-ia",type:"suffix",meaning:"condition, state",extra:"agastria (no stomach), anophthalmia (no eye), apnea (no breathing)"},
+  {term:"-malacia",type:"suffix",meaning:"softening",extra:"chondromalacia (cartilage), osteomalacia (bone). ⚠ not -megaly (enlargement)"},
+  {term:"-megaly",type:"suffix",meaning:"enlargement",extra:"hepatomegaly (enlarged liver), splenomegaly. ⚠ not -malacia (softening)"},
+  {term:"-ptosis",type:"suffix",meaning:"drooping, prolapse, falling",extra:"hysteroptosis (uterus prolapse), blepharoptosis (eyelid droop). Standalone: ptosis"},
+  {term:"-sclerosis",type:"suffix",meaning:"hardening",extra:"arteriosclerosis (artery hardening), atherosclerosis. Standalone: sclerosis"},
+  {term:"-stenosis",type:"suffix",meaning:"narrowing, stricture",extra:"arteriostenosis, pyloric stenosis. Standalone: stenosis"},
+  {term:"-scopy",type:"suffix",meaning:"process of visual examination",extra:"hysteroscopy, arthroscopy. The PROCESS; -scope = the instrument"},
+  {term:"-metry",type:"suffix",meaning:"process of measuring",extra:"spirometry (measuring breathing). Instrument: -meter"},
+  {term:"-opsy",type:"suffix",meaning:"view of, examination of tissue",extra:"biopsy (bio- + -opsy = view of living tissue removed for examination)"},
+  {term:"-stomy",type:"suffix",meaning:"surgical creation of a new opening",extra:"colostomy (colon to abdominal wall). Creates a NEW opening"},
+  {term:"-tripsy",type:"suffix",meaning:"crushing",extra:"lithotripsy (lith/o + -tripsy = crushing of stones)"},
+  {term:"-graph",type:"suffix",meaning:"instrument that records",extra:"electrocardiograph. Process = -graphy"},
+  {term:"-meter",type:"suffix",meaning:"instrument that measures",extra:"thermometer (temperature), spirometer. Process = -metry"},
+  {term:"-tome",type:"suffix",meaning:"instrument for cutting",extra:"osteotome (instrument for cutting bone)"},
+  {term:"-logist",type:"suffix",meaning:"one who studies, specialist",extra:"cardiologist, gastroenterologist, psychologist"},
+  {term:"-iatrics",type:"suffix",meaning:"medical specialty",extra:"pediatrics (children's medicine), geriatrics (elderly medicine)"},
+  {term:"arthr/o",type:"combining",meaning:"joint",extra:"arthritis (drop 'o' — Rule 1), arthroplasty (keep 'o' — Rule 2), arthroscope, arthroscopy"},
+  {term:"cardi/o",type:"combining",meaning:"heart",extra:"cardiac (-ac suffix), endocardium (Rule 3: drop duplicate 'i'), pericardium"},
+  {term:"col/o",type:"combining",meaning:"colon, large intestine",extra:"colostomy (new opening), colonoscopy (visual exam), colitis (inflammation)"},
+  {term:"cyst/o",type:"combining",meaning:"urinary bladder, sac, cyst",extra:"cystoscopy (visual exam of bladder), cystotomy, cystitis"},
+  {term:"enter/o",type:"combining",meaning:"small intestine",extra:"gastroenteritis (gastr/o + enter/o + -itis — Rule 4: keep 'o' between CFs)"},
+  {term:"gastr/o",type:"combining",meaning:"stomach",extra:"gastralgia (CARD method example), gastrectomy, gastritis, epigastric"},
+  {term:"gloss/o",type:"combining",meaning:"tongue (Greek)",extra:"glossitis (CARD primary example), hypoglossal (below tongue). Latin = lingu/o"},
+  {term:"hepat/o",type:"combining",meaning:"liver",extra:"hepatitis (inflammation), hepatomegaly (enlarged liver), subhepatic"},
+  {term:"hyster/o",type:"combining",meaning:"uterus",extra:"hysterectomy (removal), hysteroscopy (visual exam), hysteroptosis (prolapse)"},
+  {term:"mamm/o",type:"combining",meaning:"breast",extra:"mammography (imaging process), mammoplasty (reconstruction), mammogram (the image)"},
+  {term:"nat/o",type:"combining",meaning:"birth",extra:"neonatal (neo- + nat/o + -al = pertaining to new birth), prenatal, neonatology"},
+  {term:"neur/o",type:"combining",meaning:"nerve, nervous system",extra:"polyneuritis (poly- + neur/o + -itis = inflammation of many nerves), neurology"},
+  {term:"ophthalm/o",type:"combining",meaning:"eye",extra:"ophthalmoscope (eye exam instrument), anophthalmia (without eye). ⚠ Two h's in spelling"},
+  {term:"oste/o",type:"combining",meaning:"bone",extra:"osteotomy (incision into bone), osteotome (cutting instrument), osteoporosis"},
+  {term:"path/o",type:"combining",meaning:"disease, suffering",extra:"pathology (study of disease), pathologist, pathogen (disease producer)"},
+  {term:"ped/o",type:"combining",meaning:"child OR foot (dual meaning!)",extra:"pediatrics (children's medicine). ⚠ ped/o = child (Greek) OR foot (Latin)"},
+  {term:"rhin/o",type:"combining",meaning:"nose",extra:"rhinoplasty (nose reconstruction), rhinitis (nose inflammation), rhinorrhea (runny nose)"},
+  {term:"therm/o",type:"combining",meaning:"heat, temperature",extra:"thermometer (measures temperature), thermoscope, hypothermia (below-normal temperature)"},
+  {term:"Word root",type:"concept",meaning:"The core meaning component of a medical term — the foundation",extra:"Example: 'gloss' (tongue), 'gastr' (stomach). Cannot stand alone; needs suffix or combining vowel"},
+  {term:"Combining form",type:"concept",meaning:"Word root + combining vowel (usually 'o'), written with a slash: gloss/o",extra:"The subject of the term — what it is about. Example: gloss/o, gastr/o, arthr/o"},
+  {term:"Prefix",type:"concept",meaning:"Word part attached to the BEGINNING of a term; modifies meaning",extra:"No combining vowel needed. Indicates: absence, location, number/quantity, or state"},
+  {term:"Suffix",type:"concept",meaning:"Word part at the END of a term; defines the term's type/category",extra:"When defining: REVERSE the suffix to the front (CARD method step R)"},
+  {term:"Decodable term",type:"concept",meaning:"A medical term built from Greek/Latin parts that can be decoded using CARD method",extra:"Approximately 90% of medical terms. Example: gastralgia, arthritis, mammography"},
+  {term:"Nondecodable term",type:"concept",meaning:"A medical term that cannot be broken into meaningful parts — must be memorized whole",extra:"Approximately 10% of terms. Examples: cataract, asthma"},
+  {term:"Acronym",type:"concept",meaning:"Abbreviation formed from first letters of a phrase, pronounced as a word",extra:"AIDS (Acquired Immunodeficiency Syndrome), ADHD"},
+  {term:"Eponym",type:"concept",meaning:"Medical term carrying the name of a person or place associated with the discovery",extra:"Alzheimer disease, Achilles tendon, Parkinson disease, fallopian tubes"},
+  {term:"Diagnosis",type:"concept",meaning:"Identification of the patient's PRESENT condition — what the patient has NOW",extra:"Abbreviated Dx. From dia- (through) + -gnosis (knowledge)"},
+  {term:"Prognosis",type:"concept",meaning:"Prediction of the patient's FUTURE condition — expected outcome",extra:"Abbreviated Px. From pro- (before) + -gnosis (knowledge) = knowledge ahead of time"},
+  {term:"Sign",type:"concept",meaning:"OBJECTIVE clinical finding — observable/measurable by a healthcare provider",extra:"Examples: fever, rash, elevated blood pressure, abnormal lab value"},
+  {term:"Symptom",type:"concept",meaning:"SUBJECTIVE complaint — experienced by patient, not directly observable",extra:"Examples: 'I feel dizzy', 'I have pain.' Pain is ALWAYS a symptom"},
+  {term:"Acute",type:"concept",meaning:"Sudden onset, short duration, sharp/severe intensity",extra:"acu- = sharp (acupuncture). Begins abruptly and resolves. Example: acute appendicitis"},
+  {term:"Chronic",type:"concept",meaning:"Long duration, recurring or persistent — does not fully resolve",extra:"chron/o = time. Example: COPD, chronic low back pain"},
+];
+let fcCards=[],fcIdx=0,fcFlipped=false,fcGot=new Set(),fcNope=new Set();
+let quizQs=[],quizIdx=0,quizScore=0,quizAnswered=false;
+function showTab(id,btn){
+  document.querySelectorAll('.sec').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('active');
+  btn.classList.add('active');
+  if(id==='flashcards'&&fcCards.length===0)initFC();
+  if(id==='quiz')startQuiz();
+}
+function initFC(){
+  const cat=document.getElementById('fc-cat').value;
+  fcCards=cat==='all'?[...DATA]:DATA.filter(d=>d.type===cat);
+  fcCards.sort(()=>Math.random()-0.5);
+  fcIdx=0;fcFlipped=false;fcGot=new Set();fcNope=new Set();showCard();
+}
+function showCard(){
+  if(!fcCards.length)return;
+  const c=fcCards[fcIdx],m=TM[c.type];
+  const b=document.getElementById('fc-badge');
+  b.textContent=m.label;b.style.background=m.bg;b.style.color=m.c;
+  document.getElementById('fc-front').textContent=c.term;
+  document.getElementById('fc-meaning').textContent=c.meaning;
+  document.getElementById('fc-example').textContent=c.extra?'Note: '+c.extra:'';
+  document.getElementById('fc-front').style.display='block';
+  document.getElementById('fc-back').style.display='none';
+  document.getElementById('fc-hint').style.display='block';
+  fcFlipped=false;
+  document.getElementById('fc-prog').textContent='Card '+(fcIdx+1)+' of '+fcCards.length;
+  updScore();
+}
+function flipFC(){if(fcFlipped)return;fcFlipped=true;document.getElementById('fc-front').style.display='none';document.getElementById('fc-back').style.display='block';document.getElementById('fc-hint').style.display='none';}
+function markFC(ok){if(ok)fcGot.add(fcIdx);else fcNope.add(fcIdx);nextFC();}
+function nextFC(){fcIdx=(fcIdx+1)%fcCards.length;showCard();}
+function prevFC(){fcIdx=(fcIdx-1+fcCards.length)%fcCards.length;showCard();}
+function shuffleFC(){fcCards.sort(()=>Math.random()-0.5);fcIdx=0;showCard();}
+function updScore(){document.getElementById('fc-score').innerHTML='<span style="color:#1b5e20">✓ '+fcGot.size+' got it</span> &nbsp; <span style="color:#9c2020">✗ '+fcNope.size+' still learning</span> &nbsp; <span style="color:#888">'+(fcCards.length-fcGot.size-fcNope.size)+' unseen</span>';}
+function shuffle(a){return[...a].sort(()=>Math.random()-0.5);}
+function startQuiz(){
+  document.getElementById('quiz-wrap').style.display='block';
+  document.getElementById('quiz-done').style.display='none';
+  quizQs=shuffle(DATA).slice(0,15);quizIdx=0;quizScore=0;quizAnswered=false;showQ();
+}
+function showQ(){
+  if(quizIdx>=quizQs.length){endQuiz();return;}
+  const q=quizQs[quizIdx];
+  document.getElementById('quiz-q').textContent='What does "'+q.term+'" mean?';
+  document.getElementById('quiz-fb').textContent='';
+  document.getElementById('quiz-next').style.display='none';
+  document.getElementById('quiz-ctr').textContent='Question '+(quizIdx+1)+' of '+quizQs.length;
+  const wrong=shuffle(DATA.filter(d=>d.term!==q.term)).slice(0,3).map(d=>d.meaning);
+  const opts=shuffle([q.meaning,...wrong]);
+  document.getElementById('quiz-opts').innerHTML=opts.map(function(o){return'<button class="qopt" onclick="checkA(this,\''+o.replace(/\\/g,'\\\\').replace(/'/g,"\\'")+'\')">' +o+'</button>';}).join('');
+  quizAnswered=false;
+  document.getElementById('quiz-opts')._correct=q.meaning;
+}
+function checkA(btn,chosen){
+  if(quizAnswered)return;quizAnswered=true;
+  const correct=document.getElementById('quiz-opts')._correct;
+  document.querySelectorAll('.qopt').forEach(function(o){o.disabled=true;if(o.textContent.trim()===correct.trim())o.classList.add('correct');});
+  const fb=document.getElementById('quiz-fb');
+  if(chosen.trim()===correct.trim()){quizScore++;fb.textContent='✓ Correct!';fb.style.color='#1b5e20';}
+  else{btn.classList.add('wrong');fb.textContent='✗ Correct: '+correct;fb.style.color='#9c2020';}
+  document.getElementById('quiz-next').style.display='inline-block';
+}
+function nextQ(){quizIdx++;showQ();}
+function endQuiz(){document.getElementById('quiz-wrap').style.display='none';document.getElementById('quiz-done').style.display='block';document.getElementById('quiz-final').textContent=quizScore+' / '+quizQs.length;}
+window.onload=function(){document.getElementById('quiz-wrap').style.display='block';}
+</script>
+</body>
+</html>
